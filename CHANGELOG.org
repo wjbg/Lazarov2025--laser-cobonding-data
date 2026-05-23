@@ -1,0 +1,9 @@
+#+title: Changelog
+#+options: num:0 toc:nil
+
+All notable changes to this dataset are documented in this file.
+
+* V1 -- 2026-01-01 (Initial release)
+** Added
+-
+-
