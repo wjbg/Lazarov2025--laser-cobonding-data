@@ -8,14 +8,18 @@ from matplotlib.lines import Line2D
 δ = 'displacement (mm)'
 G = 'toughness, (kJ/m2)'
 
+# Folders
+data_folder = '../clean/peel/'
+imgs_folder = '../images/'
+
 # Load data
 fn_ref = ['reference-1.csv', 'reference-2.csv', 'reference-3.csv',
           'reference-4.csv', 'reference-5.csv']
 fn_tre = ['treated-1.csv', 'treated-2.csv', 'treated-3.csv',
           'treated-4.csv', 'treated-5.csv']
 
-data_ref = [pd.read_csv(fn, sep=';', header=1, names=[δ, G]) for fn in fn_ref]
-data_tre = [pd.read_csv(fn, sep=';', header=1, names=[δ, G]) for fn in fn_tre]
+data_ref = [pd.read_csv(data_folder + fn, sep=';', header=1, names=[δ, G]) for fn in fn_ref]
+data_tre = [pd.read_csv(data_folder + fn, sep=';', header=1, names=[δ, G]) for fn in fn_tre]
 
 # Plot settings
 fsize = (3.1, 2.7)
@@ -40,7 +44,7 @@ if True:
     ax.set_ylim((0, 1.0))
     ax.set_xlim((0, 60))
     ax.legend(frameon=False)
-    plt.savefig('disp-vs-toughness-example.pdf')
+    plt.savefig(imgs_folder + 'disp-vs-toughness-example.pdf')
     plt.show()
 
 
@@ -61,5 +65,5 @@ if True:
     ax.set_xlim((0.25, 2.75))
     ax.set_ylim((0, 0.5))
     ax.set_ylabel('fracture toughness [kJ/m$^2$]')
-    plt.savefig('average-toughness.pdf')
+    plt.savefig(imgs_folder + 'average-toughness.pdf')
     plt.show()
