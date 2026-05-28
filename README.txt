@@ -6,7 +6,7 @@
            __________________________________________________
 
 
-                               2026-01-01
+                               2026-05-28
 
 
 General information
@@ -31,7 +31,7 @@ General information
      tracking chemical markers (Bromine) to evaluate the depth and
      effect of the laser treatment.
   - *Mechanical Testing*: Load-displacement data from mandrel peel tests
-     comparing reference, laser-treated, and treated + annealed couons
+     comparing reference, laser-treated, and treated + annealed coupons
      to quantify bond performance.
   - *Microscopy & Fractography*: High-resolution images (Polarized,
      Ion-beam, and SEM) of the composite microstructure, the bond
@@ -61,7 +61,7 @@ License
 ~~~~~~~
 
   The journal article as well as this dataset are published under a CC
-  BY license. See `LICENSE.txt` file in this repository.
+  BY license. See `LICENSE.txt' file in this repository.
 
 
 Citation
@@ -112,74 +112,90 @@ Dataset
 =======
 
   The data is organized in the following folders:
-  - `raw`: All raw measurement data as well as the original microscopy
+  - `raw': All raw measurement data as well as the original microscopy
     images.
-  - `clean`: The cleaned data used to generate the graphs in the
-    original publication. The data is stored in `CSV` files with clear
+  - `clean': The cleaned data used to generate the graphs in the
+    original publication. The data is stored in `CSV' files with clear
     column names.
-  - `python`: The code used to generate the graphs.
-  - `images`: The images as used in the original publication.
+  - `python': The code used to generate the graphs.
+  - `images': The images as used in the original publication.
 
 
-Differential scanning calorimetry (DSC)
+Differential scanning calorimetry (dsc)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  The DSC data can be found in the folder `DSC` and is organized in
+  The dsc data can be found in the folder `dsc' and is organized in
   three subfolders:
-  - `conventional`: standard DSC data to determine the critical cooling
+  - `conventional': standard DSC data to determine the critical cooling
     rate
-  - `flash-dsc`: Flash DSC data to determine the critical cooling rate
-  - `laser-sample`: dsc trace of surface sample from laser-treated
+  - `flash-dsc': Flash DSC data to determine the critical cooling rate
+  - `laser-sample': dsc trace of surface sample from laser-treated
     laminate
 
-  The `raw` data is provided in the proprietary machine format, while
+  The `raw' data is provided in the proprietary machine format, while
   the cleaned data is provided as CSV files with clear column names. The
-  filenames in the `clean/dsc/conventional` folder are structured as
+  filenames in the `clean/dsc/conventional' folder are structured as
   follows:
 
-  `SXX-YYK-per-min.csv`,
+  `SXX-YYK-per-min.csv',
 
-  with `XX` the sample number and `YY` the cooling rate in K/min. The
-  `clean/dsc/flash-dsc` filenames are structured as:
+  with `XX' the sample number and `YY' the cooling rate in K/min. The
+  `clean/dsc/flash-dsc' filenames are structured as:
 
-  `XXXK-per-s.csv`,
+  `XXXK-per-s.csv',
 
-  with `XXX` the cooling rate in K/s.
+  with `XXX' the cooling rate in K/s.
 
 
 Laser heating
 ~~~~~~~~~~~~~
 
   The maximum surface temperature during laser heating, as measured by
-  the thermal camera, is provided in `clean/static-laser-heating`. The
-  data is stored directly as `csv` data and is therefore not available
-  in the `raw` folder. The filenames are structured as:
+  the thermal camera, is provided in `clean/static-laser-heating'. The
+  data is stored directly as `csv' data and is therefore not available
+  in the `raw' folder. The filenames are structured as:
 
-  `XXXW-YYYYms.csv`,
+  `XXXW-YYYYms.csv',
 
-  where `XXX` indicates the laser power and `YYYY` the pulse duration.
+  where `XXX' indicates the laser power and `YYYY' the pulse duration.
 
 
 SEM-EDX
 ~~~~~~~
 
-  The SEM-EDX data can be found in the folder `edx`. The `raw` data is
-  provided in a Microsoft Word file with an graph indicating the element
-  count along a predifined path that is indicated in the associated
-  `tiff` image. The `clean` data provides the Bromium count along the
-  path, with the same `tiff` image stored there for reference too.
+  The SEM-EDX data can be found in the folder `edx'. The `raw' data is
+  provided in a Microsoft Word file with a graph indicating the element
+  count along a predefined path that is indicated in the associated
+  `tiff' image. The `clean' data provides the Bromine count along the
+  path, with the same `tiff' image stored there for reference too.
 
 
 Mandrel peel data
 ~~~~~~~~~~~~~~~~~
 
-  The mandrel peel test results are provided in the foler `peel`. The
-  data is clearly labelled (`reference`, `treated`, `treated+annealed`)
+  The mandrel peel test results are provided in the folder `peel'. The
+  data is clearly labelled (`reference', `treated', `treated+annealed')
   with the last integer (1-5) indicating the sample number.
 
 
 Code
 ====
 
-  Mention which software (including version) was used to analyze the
-  data and that the scripts can be found in the folder `python`.
+  The data analysis and visualization were performed using Python 3.12.
+  The source scripts are located in the `python/' folder. To reproduce
+  the figures, it is recommended to use a virtual environment.
+
+  You can install the required dependencies using `pip':
+
+  ,----
+  | pip install -r python/requirements.txt
+  `----
+
+  Once the dependencies are installed, the scripts should be executed
+  from the `python/' directory to ensure the relative data paths are
+  correct:
+
+  ,----
+  | cd python
+  | python3 plot-peel-results.py
+  `----
