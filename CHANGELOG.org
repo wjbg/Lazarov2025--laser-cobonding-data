@@ -5,5 +5,10 @@ All notable changes to this dataset are documented in this file.
 
 * V1 -- 2026-05-28 (Initial release)
 ** Added
--
--
+- Raw and cleaned DSC/Flash-DSC data for C/PEKK crystallization study.
+- Thermal camera surface temperature profiles for static laser heating.
+- SEM-EDX line scans and images for chemical surface characterization.
+- Mandrel peel test data for bond strength evaluation.
+- High-resolution microscopy and fractography images.
+- Python analysis and plotting scripts.
+- Comprehensive documentation in Org-mode and BibTeX formats.

@@ -12,11 +12,33 @@
 General information
 ===================
 
-  Insert generic information, e.g. a reference to the publication that
-  the data belong to.
+  This data package supports the research presented in the publication
+  "Laser-induced surface modification of C/PEKK for co-bonding with
+  C/epoxy". The study investigates a laser-based surface treatment
+  designed to locally amorphize the surface of Carbon Fiber reinforced
+  Polyetherketoneketone (C/PEKK) composites. This modification aims to
+  enhance the co-bonding strength with Carbon/epoxy systems by
+  suppressing surface crystallinity and promoting better interface
+  formation.
 
   This dataset contains:
-  - Add contents
+  - *Thermal Analysis Data*: DSC and Flash DSC traces used to
+     characterize the crystallization kinetics and determine critical
+     cooling rates of the C/PEKK composite.
+  - *Laser Heating Profiles*: Surface temperature measurements recorded
+     via thermal imaging during the static laser heating.
+  - *Element Characterization*: SEM-EDX line scans and reference images
+     tracking chemical markers (Bromine) to evaluate the depth and
+     effect of the laser treatment.
+  - *Mechanical Testing*: Load-displacement data from mandrel peel tests
+     comparing reference, laser-treated, and treated + annealed couons
+     to quantify bond performance.
+  - *Microscopy & Fractography*: High-resolution images (Polarized,
+     Ion-beam, and SEM) of the composite microstructure, the bond
+     interface, and the resulting fracture surfaces.
+  - *Analysis Scripts*: Python scripts and requirements for processing
+     the clean data and reproducing the figures in the associated
+     publication.
 
 
 Authors & Affiliations
