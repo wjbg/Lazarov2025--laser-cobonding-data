@@ -11,7 +11,7 @@ H = 'Heat flow (W/g)'
 
 # Folder
 data_folder = '../clean/dsc/laser-sample/'
-imgs_folder = '../imgs/'
+imgs_folder = '../images/'
 
 # Load file
 fn = 'heating-trace.csv'
@@ -39,5 +39,5 @@ patch = FancyArrowPatch(
     arrowstyle='|-|', mutation_scale=2, linewidth=0.5, color='black')
 ax.add_patch(patch)
 ax.text(105, -0.18, '0.5 W/g')
-# plt.savefig(imgs_folder + 'dsc-laser-sample.pdf')
+plt.savefig(imgs_folder + 'dsc-laser-sample.pdf')
 plt.show()

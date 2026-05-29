@@ -22,10 +22,10 @@ fn10 = ['100W-1000ms.csv', '125W-1000ms.csv', '150W-1000ms.csv', '175W-1000ms.cs
 
 data_05 = [pd.read_csv(data_folder + fn, header=0, names=[t, T]) for fn in fn05]
 data_10 = [pd.read_csv(data_folder + fn, header=0, names=[t, T]) for fn in fn10]
-power_05 = np.linspace(225, 425, 9, endpoint=True, dtype=int)  # and for t = 1.0s
-power_10 = np.linspace(100, 350, 11, endpoint=True, dtype=int)  # Powers for t = 0.5s
+power_05 = np.linspace(225, 425, 9, endpoint=True, dtype=int)
+power_10 = np.linspace(100, 350, 11, endpoint=True, dtype=int)
 
-# Filter to only include max T > Tm
+# Filter to only include max T > 270
 df05 = []
 df10 = []
 P05 = []
@@ -56,7 +56,7 @@ matplotlib.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
 
 # Plot data for t = 0.5 s
 col05 = plt.cm.gray(np.linspace(0.1, 0.7, len(df05)))[::-1]
-if False:
+if True:
     f, ax = plt.subplots(figsize=fsize)
     ax.set_position(apos)
 
@@ -72,13 +72,13 @@ if False:
               labelspacing=0.1, handletextpad=0.2, handlelength=1.0)
     ax.plot([0, 1.0], [337, 337], ':k', lw=0.5)
     ax.text(1.1, 324, r'$T_\mathrm{m}$')
-    # plt.savefig(imgs_folder + 't-vs-T-500ms.pdf')
+    plt.savefig(imgs_folder + 't-vs-T-500ms.pdf')
     plt.show()
 
 
 # Plot data for t = 1.0 s
 col10 = plt.cm.gray(np.linspace(0.1, 0.7, len(df10)))[::-1]
-if False:
+if True:
     f, ax = plt.subplots(figsize=fsize)
     ax.set_position(apos)
 
@@ -94,14 +94,14 @@ if False:
               labelspacing=0.1, handletextpad=0.2, handlelength=1.0)
     ax.plot([0, 1.7], [337, 337], ':k', lw=0.5)
     ax.text(1.8, 324, r'$T_\mathrm{m}$')
-    # plt.savefig(imgs_folder + 't-vs-T-1000ms.pdf')
+    plt.savefig(imgs_folder + 't-vs-T-1000ms.pdf')
     plt.show()
 
 # Maximum temperatures
 Tmax05 = np.array([df[T].max() for df in df05])
 Tmax10 = np.array([df[T].max() for df in df10])
 
-if False:
+if True:
     f, ax = plt.subplots(figsize=fsize)
     ax.set_position(apos)
 
@@ -123,11 +123,11 @@ if False:
     ax.set_ylim((225, 550))
     ax.plot([150, 500], [337, 337], ':k', lw=0.5)
     ax.text(160, 343, r'$T_\mathrm{m}$')
-    # plt.savefig(imgs_folder + 'P-vs-maxT.pdf')
+    plt.savefig(imgs_folder + 'P-vs-maxT.pdf')
     plt.show()
 
 # Cooling rates
-T_int = (240, 260)
+T_int = (220, 240)
 CR05 = np.zeros_like(Tmax05)
 CR10 = np.zeros_like(Tmax10)
 
@@ -161,5 +161,5 @@ if True:
     ax.set_ylim((0, 575))
     ax.plot([150, 500], [10, 10], ':k', lw=0.5)
     ax.text(160, 18, r'$\dot{T}_\mathrm{c}$')
-    # plt.savefig(imgs_folder + 'P-vs-cooling-rate.pdf') #
+    plt.savefig(imgs_folder + 'P-vs-cooling-rate.pdf') #
     plt.show()

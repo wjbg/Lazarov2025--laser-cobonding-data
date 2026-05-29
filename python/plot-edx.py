@@ -73,5 +73,5 @@ ax.legend([Line2D([0], [0], color='#555555', linewidth=1),
           frameon=False)
 ax.set_xlabel(r'distance [\textmu m]')
 ax.set_ylabel('normalized bromine count [-]')
-# plt.savefig(imgs_folder + 'bromine-edx.pdf')
+plt.savefig(imgs_folder + 'bromine-edx.pdf')
 plt.show()

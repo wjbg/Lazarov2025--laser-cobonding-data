@@ -67,5 +67,5 @@ patch = FancyArrowPatch(
     color='black')
 ax.add_patch(patch)
 ax.text(375, -1.48, '0.2 mW', ha='right')
-# plt.savefig(imgs_folder + 'fDSC-cooling-rates.pdf')
+plt.savefig(imgs_folder + 'fDSC-cooling-rates.pdf')
 plt.show()

@@ -52,5 +52,5 @@ ax.legend([Line2D([0], [0],
           frameon=False)
 ax.plot([10, 10], [0.015, 0.03], ':', lw=0.5, color='black')
 ax.text(8, 0.032, r'$\dot{T}_\mathrm{c}$')
-# plt.savefig(imgs_folder + 'coolingrate-vs-doc.pdf')
+plt.savefig(imgs_folder + 'coolingrate-vs-doc.pdf')
 plt.show()
