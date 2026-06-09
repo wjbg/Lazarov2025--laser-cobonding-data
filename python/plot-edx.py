@@ -58,6 +58,7 @@ matplotlib.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
 # Plot data
 f, ax = plt.subplots(figsize=fsize)
 ax.set_position(apos)
+ax.plot([0.0, 0.0], [0.0, 1.1], '--', color='black', linewidth=0.5)
 
 for i in range(3):
     ax.plot(treated[i][δ],
@@ -73,5 +74,7 @@ ax.legend([Line2D([0], [0], color='#555555', linewidth=1),
           frameon=False)
 ax.set_xlabel(r'distance [\textmu m]')
 ax.set_ylabel('normalized bromine count [-]')
+ax.text(-2.0, 0.5, r'FM300', ha='center')
+ax.text(5.0, 0.5, r'C/PEKK', ha='center')
 plt.savefig(imgs_folder + 'bromine-edx.pdf')
 plt.show()
