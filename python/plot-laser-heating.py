@@ -149,7 +149,7 @@ if True:
             ls='', marker='o', mfc='#555555', mec='black', ms=5)
 
     ax.set_xlabel('power [W]')
-    ax.set_ylabel('cooling rate at 250 °C [°C/s]')
+    ax.set_ylabel('cooling rate at 230 °C [°C/s]')
     ax.legend([Line2D([0], [0],
                   ls='', marker='s', mfc='#999999', mec='black', ms=5),
            Line2D([0], [0],
