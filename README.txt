@@ -1,7 +1,7 @@
            __________________________________________________
 
                 DATA PACKAGE FOR 'LASER-INDUCED SURFACE
-               MODIFICATION OF C/PEKK FOR CO-BONDING WITH
+               MODIFICATION OF C/PEKK FOR CO-CURING WITH
                                 C/EPOXY'
            __________________________________________________
 
@@ -13,11 +13,11 @@ General information
 ===================
 
   This data package supports the research presented in the publication
-  "Laser-induced surface modification of C/PEKK for co-bonding with
+  "Laser-induced surface modification of C/PEKK for co-curing with
   C/epoxy". The study investigates a laser-based surface treatment
   designed to locally amorphize the surface of Carbon Fiber reinforced
   Polyetherketoneketone (C/PEKK) composites. This modification aims to
-  enhance the co-bonding strength with Carbon/epoxy systems by
+  enhance the co-curing strength with Carbon/epoxy systems by
   suppressing surface crystallinity and promoting better interface
   formation.
 
@@ -89,7 +89,7 @@ Citation
   |   author    = {Lazarov, I.V. and Katz, L. and Geschiere, I.J. and
   |                Helthuis, N.G.J. and Grouve, W.J.B.},
   |   title     = {Data package for "Laser-induced surface modification of
-  |                C/PEKK for co-bonding with C/epoxy"},
+  |                C/PEKK for co-curing with C/epoxy"},
   |   year      = {2025},
   |   doi       = {ADD DOI},
   |   publisher = {4TU.ResearchData},

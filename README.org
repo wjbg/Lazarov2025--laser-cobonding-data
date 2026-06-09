@@ -1,10 +1,10 @@
-#+title: Data package for 'Laser-induced surface modification of C/PEKK for co-bonding with C/epoxy'
+#+title: Data package for 'Laser-induced surface modification of C/PEKK for co-curing with C/epoxy'
 #+date: 2026-05-28
 #+options: num:0 toc:nil author:nil
 
 * General information
 
-This data package supports the research presented in the publication "Laser-induced surface modification of C/PEKK for co-bonding with C/epoxy". The study investigates a laser-based surface treatment designed to locally amorphize the surface of Carbon Fiber reinforced Polyetherketoneketone (C/PEKK) composites. This modification aims to enhance the co-bonding strength with Carbon/epoxy systems by suppressing surface crystallinity and promoting better interface formation.
+This data package supports the research presented in the publication "Laser-induced surface modification of C/PEKK for co-curing with C/epoxy". The study investigates a laser-based surface treatment designed to locally amorphize the surface of Carbon Fiber reinforced Polyetherketoneketone (C/PEKK) composites. This modification aims to enhance the co-curing strength with Carbon/epoxy systems by suppressing surface crystallinity and promoting better interface formation.
 
 This dataset contains:
 - *Thermal Analysis Data*: DSC and Flash DSC traces used to characterize the crystallization kinetics and determine critical cooling rates of the C/PEKK composite.
@@ -55,7 +55,7 @@ as well as this dataset:
   author    = {Lazarov, I.V. and Katz, L. and Geschiere, I.J. and
                Helthuis, N.G.J. and Grouve, W.J.B.},
   title     = {Data package for "Laser-induced surface modification of
-               C/PEKK for co-bonding with C/epoxy"},
+               C/PEKK for co-curing with C/epoxy"},
   year      = {2025},
   doi       = {ADD DOI},
   publisher = {4TU.ResearchData},
