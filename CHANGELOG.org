@@ -12,3 +12,11 @@ All notable changes to this dataset are documented in this file.
 - High-resolution microscopy and fractography images.
 - Python analysis and plotting scripts.
 - Comprehensive documentation in Org-mode and BibTeX formats.
+
+* V2 -- 2026-09-04 (Second version with additional data requested during review)
+** Added
+- EDX mappings of the laser-treated + annealed surface.
+- Confocal images of the reference, treated, treated + annealed surfaces.
+- DSC data to check the degree of crystallinity of the annealed surface.
+** Changed
+- Corrected scale bar in polarized microscopy image.

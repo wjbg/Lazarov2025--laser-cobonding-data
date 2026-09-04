@@ -139,8 +139,13 @@ Differential scanning calorimetry (dsc)
 
   `SXX-YYK-per-min.csv',
 
-  with `XX' the sample number and `YY' the cooling rate in K/min. The
-  `clean/dsc/flash-dsc' filenames are structured as:
+  with `XX' the sample number and `YY' the cooling rate in K/min. In
+  addition, two other files are included, namely
+  `isothermal-155C-2hrs.csv' and `isothermal-177C-2hrs.csv' with the
+  data of the isothermal crystallization experiments at 155 and 177 °C,
+  respectively.
+
+  The `clean/dsc/flash-dsc' filenames are structured as:
 
   `XXXK-per-s.csv',
 
@@ -174,8 +179,19 @@ Mandrel peel data
 ~~~~~~~~~~~~~~~~~
 
   The mandrel peel test results are provided in the folder `peel'. The
-  data is clearly labelled (`reference', `treated', `treated+annealed')
-  with the last integer (1-5) indicating the sample number.
+  data is labelled (`reference', `treated', `treated+annealed') with the
+  last integer (1-5) indicating the sample number.
+
+
+Confocal imaging
+~~~~~~~~~~~~~~~~
+
+  The confocal height profile data is provided in the folder `confocal'.
+  The data is labelled (`reference', `treated', `treated+annealed') with
+  the last integer (1-5) indicating the sample number. The files include
+  height profiles, including resolution and acquisition information, in
+  `csv' format and an overview image in `bmp' format. Moreover, the raw
+  data in proprietary `vk3' format is providedin the `raw' data folder.
 
 
 Code

@@ -7,7 +7,7 @@
    viewBox="0 0 85 70"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    sodipodi:docname="polarized-microscopy.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,13 +24,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="12.585971"
-     inkscape:cx="25.981309"
-     inkscape:cy="243.40593"
+     inkscape:zoom="8.8996254"
+     inkscape:cx="251.9769"
+     inkscape:cy="-8.9329603"
      inkscape:window-width="1920"
-     inkscape:window-height="1132"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showgrid="false" />
@@ -42,42 +42,6 @@
        width="40.226413"
        height="14.607357"
        id="rect9" />
-    <marker
-       style="overflow:visible"
-       id="marker9"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Stop"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:none;stroke:context-stroke;stroke-width:1"
-         d="M 0,4 V -4"
-         id="path9" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker8"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Stop"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:none;stroke:context-stroke;stroke-width:1"
-         d="M 0,4 V -4"
-         id="path8" />
-    </marker>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath2">
@@ -264,6 +228,42 @@
          sodipodi:nodetypes="sssss"
          id="path6-2-9-5" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="marker9-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path9-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path8-2" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -422,32 +422,28 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.0881944"
          x="6.7127657"
          y="60.028679">0°</tspan></text>
-    <g
-       id="g9"
-       transform="translate(-31.937616,9.1567526)">
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0881943"
-         id="rect3-5"
-         width="15.64989"
-         height="5.5995851"
-         x="94.047409"
-         y="-9.1567526" />
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:3.175px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0881943"
-         x="101.65269"
-         y="-4.4583988"
-         id="text3"><tspan
-           sodipodi:role="line"
-           id="tspan3"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#ffffff;stroke-width:0.0881944"
-           x="101.65269"
-           y="-4.4583988">500 μm</tspan></text>
-      <path
-         style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176;stroke-dasharray:none;marker-start:url(#marker9);marker-end:url(#marker8)"
-         d="m 98.597253,-7.9166843 h 5.975667"
-         id="path7" />
-    </g>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0881943"
+       id="rect3-5"
+       width="15.64989"
+       height="5.5995851"
+       x="62.109795"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:3.175px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0881943"
+       x="69.804268"
+       y="4.6983538"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#ffffff;stroke-width:0.0881944"
+         x="69.804268"
+         y="4.6983538">200 μm</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176;stroke-dasharray:none;marker-start:url(#marker9-4);marker-end:url(#marker8-8)"
+       d="m 66.787919,1.1977095 h 6.379856"
+       id="path7-5" />
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
